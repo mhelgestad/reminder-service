@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 public class ReminderScheduleService {
 
     @Autowired
-    private EmailService emailService;
+    private EmailNotificationService emailNotificationService;
 
-    @Scheduled(cron = "")
     public void sendNotification() {
-        emailService.sendEmail("maxhelgestad6@outlook.com", "Don't be a dumb dork");
+//        emailService.sendEmail("testing@outlook.com", "Don't be a dumb dork");
     }
 }

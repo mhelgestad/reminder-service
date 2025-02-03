@@ -19,13 +19,8 @@ public class NotificationController {
     @GetMapping(path = "/")
     public ResponseEntity<String> getAllNotifications() {
         List<EmailNotification> notifications = emailNotificationService.getAllEmailNotifications();
-        return ResponseEntity.ok("Successfully Got");
+        return ResponseEntity.ok("Successfully Got " + notifications.size() + " notifications");
     }
-
-//    @GetMapping(path = "/")
-//    public ResponseEntity<String> getNotification() {
-//        return null;
-//    }
 
     @PostMapping("/")
     public ResponseEntity<String> addEmailNotification(@RequestBody EmailNotificationRequest request) {

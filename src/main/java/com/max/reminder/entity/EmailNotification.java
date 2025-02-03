@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "email-notifications")
+@Table(name = "notifications")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
